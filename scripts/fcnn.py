@@ -114,7 +114,8 @@ def train_model(data_train, num_epochs):
         val_history.append(val_accuracy)
         scheduler.step()
 
-        print(f'Average loss: {ave_loss:.4f}, '
+        print(f'Epoch {epoch}, '
+              f'Average loss: {ave_loss:.4f}, '
               f'Train accuracy: {train_accuracy:.4f}, '
               f'Val accuracy: {val_accuracy}:.4f')
 
